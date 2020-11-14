@@ -4,7 +4,8 @@ import "../../App.css";
 export default function Marketing() {
   return (
     <div className="marketing">
-      <h1>Marysia</h1>
+      <p>Moja młodsza siostra.</p>
+      <h1>Marysia (Dzidka)</h1>
     </div>
   );
 }

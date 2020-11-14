@@ -10,7 +10,7 @@
   cursor: pointer;
 }
 .dropdown-menu li:hover {
-  background: #ccc;
+  background: rgb(122, 121, 121);
 }
 .dropdown-menu.clicked {
   display: none;

@@ -29,7 +29,7 @@ function Navbar(props) {
     <>
       <nav className="navbar">
         <Link to="/" className="navbar-logo">
-          Domy i ludzie <GiFamilyHouse />
+          Domy i ludzie <GiFamilyHouse className="icon" />
         </Link>
         <div className="menu-icon" onClick={handleClick}>
           <i className={click ? "fas fa-times" : "fas fa-bars"} />
