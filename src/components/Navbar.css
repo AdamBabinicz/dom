@@ -70,9 +70,9 @@
   .fa-caret-down {
     display: none;
   }
-  .NavbarItems {
+  /* .NavbarItems {
     position: relative;
-  }
+  } */
 
   .nav-menu {
     display: flex;
