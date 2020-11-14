@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export default function Consulting() {
   const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
-  const handleClick = () => setClick(!click);
+  // const handleClick = () => setClick(!click);
   const onMouseEnter = () => {
     if (window.innerWidth < 960) {
       setDropdown(false);
