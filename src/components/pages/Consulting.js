@@ -4,7 +4,7 @@ import Text from "../Text";
 import { Link } from "react-router-dom";
 
 export default function Consulting() {
-  const [click, setClick] = useState(false);
+  // const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
   // const handleClick = () => setClick(!click);
   const onMouseEnter = () => {
