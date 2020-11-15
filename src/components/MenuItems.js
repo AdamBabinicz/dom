@@ -2,22 +2,22 @@ export const MenuItems = [
   {
     title: "Marysia",
     description: "moja siostra",
-    path: "/marketing",
+    path: "/dzidka",
     cName: "dropdown-link",
   },
   {
     title: "Adaś",
-    path: "/consulting",
+    path: "/adam",
     cName: "dropdown-link",
   },
   {
     title: "Ania",
-    path: "/design",
+    path: "/ania",
     cName: "dropdown-link",
   },
   {
     title: "Ela",
-    path: "/development",
+    path: "/ela",
     cName: "dropdown-link",
   },
 ];

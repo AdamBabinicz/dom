@@ -1,7 +1,7 @@
 import React from "react";
 import "../../App.css";
 
-export default function Marketing() {
+export default function Dzidka() {
   return (
     <div className="marketing">
       <p>Moja młodsza siostra.</p>

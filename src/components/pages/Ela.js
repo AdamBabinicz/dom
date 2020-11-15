@@ -1,7 +1,7 @@
 import React from "react";
 import "../../App.css";
 
-export default function Development() {
+export default function Ela() {
   return (
     <div className="development">
       <p>Rówieśniczka mojej siostry.</p>

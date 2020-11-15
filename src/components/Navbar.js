@@ -46,7 +46,7 @@ function Navbar(props) {
             onMouseLeave={onMouseLeave}
           >
             <Link
-              to="/services"
+              to="/children"
               className="nav-links"
               onClick={closeMobileMenu}
             >
@@ -55,26 +55,18 @@ function Navbar(props) {
             {dropdown && <Dropdown />}
           </li>
           <li className="nav-item">
-            <Link
-              to="/products"
-              className="nav-links"
-              onClick={closeMobileMenu}
-            >
+            <Link to="/family" className="nav-links" onClick={closeMobileMenu}>
               Rodzina
             </Link>
           </li>
           <li className="nav-item">
-            <Link
-              to="/contact-us"
-              className="nav-links"
-              onClick={closeMobileMenu}
-            >
+            <Link to="/house" className="nav-links" onClick={closeMobileMenu}>
               Dom
             </Link>
           </li>
           <li className="nav-item">
             <Link
-              to="/sign-up"
+              to="/gang"
               className="nav-links-mobile"
               onClick={closeMobileMenu}
             >

@@ -3,7 +3,7 @@ import "../../App.css";
 import Text from "../Text";
 import { Link } from "react-router-dom";
 
-export default function Consulting() {
+export default function Adam() {
   // const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
   // const handleClick = () => setClick(!click);

@@ -3,14 +3,14 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components/pages/Home";
-import Services from "./components/pages/Services";
-import Products from "./components/pages/Products";
-import ContactUs from "./components/pages/ContactUs";
-import SignUp from "./components/pages/SignUp";
-import Marketing from "./components/pages/Marketing";
-import Consulting from "./components/pages/Consulting";
-import Design from "./components/pages/Design";
-import Development from "./components/pages/Development";
+import Children from "./components/pages/Children";
+import Family from "./components/pages/Family";
+import House from "./components/pages/House";
+import Gang from "./components/pages/Gang";
+import Dzidka from "./components/pages/Dzidka";
+import Adam from "./components/pages/Adam";
+import Ania from "./components/pages/Ania";
+import Ela from "./components/pages/Ela";
 
 function App() {
   return (
@@ -18,14 +18,14 @@ function App() {
       <Navbar />
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/services" exact component={Services} />
-        <Route path="/products" exact component={Products} />
-        <Route path="/contact-us" exact component={ContactUs} />
-        <Route path="/sign-up" exact component={SignUp} />
-        <Route path="/marketing" exact component={Marketing} />
-        <Route path="/consulting" exact component={Consulting} />
-        <Route path="/design" exact component={Design} />
-        <Route path="/development" exact component={Development} />
+        <Route path="/children" exact component={Children} />
+        <Route path="/family" exact component={Family} />
+        <Route path="/house" exact component={House} />
+        <Route path="/gang" exact component={Gang} />
+        <Route path="/dzidka" exact component={Dzidka} />
+        <Route path="/adam" exact component={Adam} />
+        <Route path="/ania" exact component={Ania} />
+        <Route path="/ela" exact component={Ela} />
       </Switch>
     </Router>
   );
