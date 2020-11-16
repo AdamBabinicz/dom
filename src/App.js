@@ -11,11 +11,14 @@ import Dzidka from "./components/pages/Dzidka";
 import Adam from "./components/pages/Adam";
 import Ania from "./components/pages/Ania";
 import Ela from "./components/pages/Ela";
+import Footer from "./components/Footer";
+import Modal from "./components/modal/Modal";
 
 function App() {
   return (
     <Router>
       <Navbar />
+
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/children" exact component={Children} />
@@ -26,7 +29,10 @@ function App() {
         <Route path="/adam" exact component={Adam} />
         <Route path="/ania" exact component={Ania} />
         <Route path="/ela" exact component={Ela} />
+        <Route path="/ela" exact component={Ela} />
+        <Route path="/modal" component={Modal} exact />
       </Switch>
+      <Footer />
     </Router>
   );
 }
