@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React from "react";
 import styled, { css } from "styled-components";
 // import BackgroundImg from "../images/key.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
