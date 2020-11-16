@@ -2,7 +2,7 @@ import React from "react";
 import styled, { css } from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button } from "../components/Button";
-// import Logo from "../images/5.png";
+// import Logo from "../images/1.jpg";
 // import { Marginer } from "../marginer";
 import { theme } from "../theme";
 import {
@@ -53,6 +53,7 @@ const AccessibilityContainer = styled.div`
   padding: 2rem;
   color: ${theme.primary};
   justify-content: space-between;
+  border-top: 0;
 
   @media screen and (max-width: 480px) {
     width: 90%;
@@ -238,7 +239,7 @@ function Footer(proops) {
     <>
       <FooterContainer name="footer">
         {/* <Marginer direction="vertical" margin="5em" /> */}
-        {/* <Logo small /> */}
+        {/* <Logo /> */}
         {/* <Marginer direction="vertical" margin="1em" /> */}
         {/* <MotivationalText>
           W sieci jest ponad 1,5 miliarda stron www.
