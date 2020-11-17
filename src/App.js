@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -13,6 +13,7 @@ import Ania from "./components/pages/Ania";
 import Ela from "./components/pages/Ela";
 import Footer from "./components/Footer";
 import Modal from "./components/modal/Modal";
+import Slider from "./components/Slider";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path="/ania" exact component={Ania} />
         <Route path="/ela" exact component={Ela} />
         <Route path="/ela" exact component={Ela} />
+        <Route path="/slider" component={Slider} />
         <Route path="/modal" component={Modal} exact />
       </Switch>
       <Footer />

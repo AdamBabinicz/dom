@@ -40,6 +40,11 @@ function Navbar(props) {
               Home
             </Link>
           </li>
+          <li className="nav-item">
+            <Link to="/slider" className="nav-links" onClick={closeMobileMenu}>
+              Album
+            </Link>
+          </li>
           <li
             className="nav-item"
             onMouseEnter={onMouseEnter}
@@ -59,17 +64,14 @@ function Navbar(props) {
               Rodzina
             </Link>
           </li>
+
           <li className="nav-item">
             <Link to="/house" className="nav-links" onClick={closeMobileMenu}>
               Dom
             </Link>
           </li>
           <li className="nav-item">
-            <Link
-              to="/gang"
-              className="nav-links-mobile"
-              onClick={closeMobileMenu}
-            >
+            <Link to="/gang" className="nav-links" onClick={closeMobileMenu}>
               Ferajna
             </Link>
           </li>
