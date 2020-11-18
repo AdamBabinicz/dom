@@ -419,7 +419,13 @@ function Footer(proops) {
             </SocialIcon>
           </SocialContainer>
         </AccessibilityContainer>
-        <RightsReserved>ag 2020</RightsReserved>
+        <LinkExt
+          to="//a-g.netlify.app"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <RightsReserved>ag 2020</RightsReserved>
+        </LinkExt>
       </FooterContainer>
     </>
   );

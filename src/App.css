@@ -25,7 +25,7 @@ body {
   color: #fff;
 }
 .home {
-  background: url("./images/dom.jpg") center/cover no-repeat;
+  background: url("./images/dom.jpg") center/cover no-repeat fixed;
   flex-direction: column;
   text-align: center;
   flex-wrap: wrap;
@@ -38,7 +38,6 @@ body {
   width: clamp(35ch, 50%, 75ch);
   border-radius: 0.5rem;
 }
-
 .live {
   display: flex;
   justify-content: center;
