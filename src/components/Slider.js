@@ -9,7 +9,7 @@ import i5 from "../images/gallery/5.jpg";
 import i6 from "../images/gallery/6.jpg";
 import i7 from "../images/gallery/7.jpg";
 import i8 from "../images/gallery/8.jpg";
-import i9 from "../images/gallery/1.jpeg";
+import i9 from "../images/gallery/9.jpg";
 // import i10 from "../images/gallery/.jpg";
 
 function Slider() {
