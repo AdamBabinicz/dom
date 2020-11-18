@@ -24,6 +24,7 @@
 .fa.fa-chevron-left,
 .fa.fa-chevron-right {
   font-size: 3rem;
+  text-shadow: 0.05rem 0.05rem 0.05rem rgba(0, 0, 0, 0.72);
 }
 .slide img {
   display: flex;
