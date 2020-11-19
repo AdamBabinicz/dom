@@ -96,7 +96,7 @@ body {
   align-items: center;
 }
 .sign-up {
-  background: url("./images/3.jpg") center bottom/contain no-repeat;
+  background: url("./images/10.png") center bottom/contain no-repeat;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
@@ -108,7 +108,7 @@ body {
   align-items: center;
 }
 .consulting {
-  background: url("./images/9-1.png") center / auto no-repeat;
+  background: url("./images/14.png") center bottom/ auto no-repeat;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
@@ -120,13 +120,13 @@ body {
   display: none;
 }
 .design {
-  background: url("./images/7-1.png") center / auto no-repeat;
+  background: url("./images/12.png") center bottom/ auto no-repeat;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
 }
 .development {
-  background: url("./images/3.png") center bottom/ auto no-repeat;
+  background: url("./images/13.png") center bottom/ auto no-repeat;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
