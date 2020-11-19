@@ -41,7 +41,7 @@ import i37 from "../images/gallery/43.jpg";
 
 function Slider() {
   let sliderArr = [
-    <ImgComp src={i1} />,
+    <ImgComp src={i1}></ImgComp>,
     <ImgComp src={i2} />,
     <ImgComp src={i3} />,
     <ImgComp src={i4} />,
