@@ -18,17 +18,17 @@ import i14 from "../images/gallery/32.jpg";
 import i15 from "../images/gallery/34.jpg";
 import i16 from "../images/gallery/47.jpg";
 import i17 from "../images/gallery/13.jpg";
-import i18 from "../images/gallery/14.jpg";
-import i19 from "../images/gallery/28.jpg";
-import i20 from "../images/gallery/21.jpg";
-import i21 from "../images/gallery/22.jpg";
-import i22 from "../images/gallery/23.jpg";
-import i23 from "../images/gallery/25.jpg";
-import i24 from "../images/gallery/26.jpg";
-import i25 from "../images/gallery/20.jpg";
-import i26 from "../images/gallery/33.jpg";
-import i27 from "../images/gallery/35.jpg";
-import i28 from "../images/gallery/11.jpg";
+import i18 from "../images/gallery/21.jpg";
+import i19 from "../images/gallery/22.jpg";
+import i20 from "../images/gallery/23.jpg";
+import i21 from "../images/gallery/11.jpg";
+import i22 from "../images/gallery/25.jpg";
+import i23 from "../images/gallery/14.jpg";
+import i24 from "../images/gallery/28.jpg";
+import i25 from "../images/gallery/26.jpg";
+import i26 from "../images/gallery/20.jpg";
+import i27 from "../images/gallery/33.jpg";
+import i28 from "../images/gallery/35.jpg";
 import i29 from "../images/gallery/12.jpg";
 import i30 from "../images/gallery/39.jpg";
 import i31 from "../images/gallery/37.jpg";
@@ -41,7 +41,7 @@ import i37 from "../images/gallery/43.jpg";
 
 function Slider() {
   let sliderArr = [
-    <ImgComp src={i1}></ImgComp>,
+    <ImgComp src={i1} />,
     <ImgComp src={i2} />,
     <ImgComp src={i3} />,
     <ImgComp src={i4} />,
@@ -96,7 +96,9 @@ function Slider() {
             <div
               key={index}
               className="slide"
-              style={{ transform: `translateX(${x}%)` }}
+              style={{
+                transform: `translateX(${x}%)`,
+              }}
             >
               {item}
             </div>

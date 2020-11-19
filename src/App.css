@@ -9,6 +9,13 @@ body {
   font-family: "Syne Mono", monospace;
   overflow-x: hidden;
 }
+.number {
+  color: #fff;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 .home,
 .services,
 .products,
