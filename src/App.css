@@ -5,7 +5,7 @@
 }
 body {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)),
-    url("./images/2.jpeg") center top/ auto no-repeat;
+    url("./images/2.jpg") center top/ auto no-repeat;
   font-family: "Syne Mono", monospace;
   overflow-x: hidden;
 }

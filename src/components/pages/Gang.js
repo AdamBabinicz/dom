@@ -5,8 +5,8 @@ export default function Gang() {
   return (
     <div className="sign-up">
       <p>
-        Po 16 latach od zakończenia II wojny światowej, nadal bawiliśmy się w
-        "wojnę". Tutaj na wyraźne życzenie fotografującego wąchaliśmy kwiatki.
+        Po 16 latach od zakończenia II wojny światowej, nadal najczęściej
+        bawiliśmy się w "wojnę".
       </p>
       <h1>Ferajna</h1>
     </div>
