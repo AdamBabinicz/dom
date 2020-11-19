@@ -2,7 +2,7 @@ import React from "react";
 
 const Text = () => {
   return (
-    <div>
+    <div className="background">
       <br />
       Tutaj spędziłem większość swojego dzieciństwa oraz pierwsze lata młodości.
       Budynek, choć pozbawiony wygód, wewnątrz został przez tajemniczych
