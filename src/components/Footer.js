@@ -424,7 +424,7 @@ function Footer(proops) {
           rel="noopener noreferrer"
           target="_blank"
         >
-          <RightsReserved>ag 2020</RightsReserved>
+          <RightsReserved>ag 2020 - {new Date().getFullYear()}.</RightsReserved>
         </LinkExt>
       </FooterContainer>
     </>
