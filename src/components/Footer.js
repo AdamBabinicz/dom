@@ -246,7 +246,7 @@ function Footer(proops) {
         </MotivationalText>
         <MotivationalText>Czy masz już swoją?</MotivationalText> */}
         {/* <Marginer direction="vertical" margin="1em" /> */}
-        {/* <Button onClick={scrollToAbout}>O mnie</Button> */}
+        {/* <Button onClick={ToAbout}>O mnie</Button> */}
         {/* <Marginer direction="vertical" margin="5em" /> */}
         <AccessibilityContainer>
           <PrivacyContainer>

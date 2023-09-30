@@ -88,31 +88,31 @@ body {
   background: rgba(78, 78, 78, 0.603);
 }
 .products {
-  background: url("./images/1.png") center bottom/auto no-repeat fixed;
+  background: url("./images/7.webp") center bottom/22% no-repeat fixed;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
 }
 .contact-us {
-  background: url("./images/1.jpg") center / auto no-repeat fixed;
+  background: url("./images/6.webp") center / auto no-repeat fixed;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
 }
 .sign-up {
-  background: url("./images/10.png") center bottom/contain no-repeat fixed;
+  background: url("./images/1.webp") center bottom/30% no-repeat fixed;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
 }
 .marketing {
-  background: url("./images/6.png") center bottom/auto no-repeat fixed;
+  background: url("./images/3.webp") center bottom/10% no-repeat fixed;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
 }
 .consulting {
-  background: url("./images/14.png") center bottom/ auto no-repeat fixed;
+  background: url("./images/2.webp") center bottom/13% no-repeat fixed;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
@@ -124,13 +124,13 @@ body {
   display: none;
 }
 .design {
-  background: url("./images/12-1.png") center bottom/ auto no-repeat fixed;
+  background: url("./images/4.webp") center bottom/11% no-repeat fixed;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
 }
 .development {
-  background: url("./images/13-1.png") center bottom/ auto no-repeat fixed;
+  background: url("./images/5.webp") center bottom/19% no-repeat fixed;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
