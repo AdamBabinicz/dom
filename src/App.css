@@ -5,12 +5,14 @@
 }
 html {
   overflow-x: hidden;
+  position: relative;
 }
 body {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)),
-    url("./images/2.jpg") center top/ auto no-repeat;
+    url("./images/2.jpg") center top / cover no-repeat;
   font-family: "Syne Mono", monospace;
   overflow-x: hidden;
+  position: relative;
 }
 .background {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8));
@@ -32,7 +34,7 @@ body {
   color: #fff;
 }
 .home {
-  background: url("./images/dom.jpg") center/cover no-repeat fixed;
+  background: url("./images/dom.jpg") center / cover no-repeat fixed;
   flex-direction: column;
   text-align: center;
   flex-wrap: wrap;

@@ -339,8 +339,8 @@ function Footer(proops) {
             {/* <ModalContainer>
                <p>
                 <FontAwesomeIcon icon={faCode} />
-              </p> 
-               <Skills> 
+              </p>
+               <Skills>
                   <span>
                     <FontAwesomeIcon icon={faHtml5} />
                   </span>
@@ -365,7 +365,7 @@ function Footer(proops) {
                   <span>
                     <FontAwesomeIcon icon={faPhp} />
                   </span>
-                </Skills> 
+                </Skills>
             </ModalContainer> */}
 
             <LinkExt
