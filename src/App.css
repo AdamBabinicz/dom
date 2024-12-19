@@ -145,4 +145,7 @@ body {
     flex-direction: row;
     align-items: center;
   }
+  .products {
+    background: url("./images/7.webp") center bottom / 80% no-repeat fixed;
+  }
 }
