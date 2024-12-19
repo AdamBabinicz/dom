@@ -134,3 +134,11 @@
     display: none;
   }
 }
+@media only screen and (max-width: 768px) {
+  .navbar-logo {
+    left: 1.5rem;
+  }
+  .navbar-logo .icon {
+    margin-left: 1rem !important;
+  }
+}
