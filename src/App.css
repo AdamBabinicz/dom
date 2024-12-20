@@ -150,18 +150,18 @@ body {
     background: url("./images/7.webp") center bottom / 80% no-repeat fixed;
   }
   .consulting {
-    background: url("./images/2.webp") center bottom / 60% no-repeat fixed;
+    background: url("./images/2.webp") center bottom / 50% no-repeat fixed;
   }
   .sign-up {
     background: url("./images/1.webp") center bottom/90% no-repeat fixed;
   }
   .marketing {
-    background: url("./images/3.webp") center bottom/50% no-repeat fixed;
+    background: url("./images/3.webp") center bottom/40% no-repeat fixed;
   }
   .design {
-    background: url("./images/4.webp") center bottom/50% no-repeat fixed;
+    background: url("./images/4.webp") center bottom/40% no-repeat fixed;
   }
   .development {
-    background: url("./images/5.webp") center bottom/80% no-repeat fixed;
+    background: url("./images/5.webp") center bottom/70% no-repeat fixed;
   }
 }

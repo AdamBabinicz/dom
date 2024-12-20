@@ -6,24 +6,23 @@ import Dropdown from "./Dropdown";
 import { GiFamilyHouse } from "react-icons/gi";
 
 function Navbar(props) {
-  const [click, setClick] = useState(false); // Główne menu (w wersji mobilnej)
-  const [dropdown, setDropdown] = useState(false); // Stan rozwinięcia dropdownu
-
-  // Przełączanie głównego menu (w wersji mobilnej)
+  const [click, setClick] = useState(false);
+  const [dropdown, setDropdown] = useState(false);
   const handleClick = () => setClick(!click);
-
-  // Funkcja do zamknięcia głównego menu
   const closeMobileMenu = () => setClick(false);
-
-  // Funkcja do przełączania dropdownu (rozszerzanie/zamykanie menu)
-  const toggleDropdown = () => {
-    setDropdown(!dropdown);
+  const onMouseEnter = () => {
+    if (window.innerWidth < 960) {
+      setDropdown(false);
+    } else {
+      setDropdown(true);
+    }
   };
-
-  // Funkcja do zamknięcia dropdownu po kliknięciu w link
-  const closeDropdownAndMenu = () => {
-    setDropdown(false); // Zamyka dropdown
-    setClick(false); // Zamyka główne menu
+  const onMouseLeave = () => {
+    if (window.innerWidth < 960) {
+      setDropdown(false);
+    } else {
+      setDropdown(false);
+    }
   };
 
   return (
@@ -38,7 +37,7 @@ function Navbar(props) {
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">
             <Link to="/" className="nav-links" onClick={closeMobileMenu}>
-              Start
+              Home
             </Link>
           </li>
           <li className="nav-item">
@@ -46,26 +45,26 @@ function Navbar(props) {
               Album
             </Link>
           </li>
-          <li className="nav-item">
+          <li
+            className="nav-item"
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
+          >
             <Link
               to="/children"
               className="nav-links"
-              onClick={toggleDropdown} // Rozwija/zamyka dropdown po kliknięciu
+              onClick={closeMobileMenu}
             >
-              Dzieci
-              {/* Strzałka zmienia kierunek, jeśli menu jest rozwinięte */}
-              <i className={`fas fa-caret-down ${dropdown ? "active" : ""}`} />
+              Dzieci <i className="fas fa-caret-down" />
             </Link>
-            {/* Pokaż dropdown tylko wtedy, gdy stan 'dropdown' jest aktywny */}
-            {dropdown && (
-              <Dropdown closeDropdownAndMenu={closeDropdownAndMenu} />
-            )}
+            {dropdown && <Dropdown />}
           </li>
           <li className="nav-item">
             <Link to="/family" className="nav-links" onClick={closeMobileMenu}>
               Rodzina
             </Link>
           </li>
+
           <li className="nav-item">
             <Link to="/house" className="nav-links" onClick={closeMobileMenu}>
               Dom

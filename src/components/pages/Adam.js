@@ -25,7 +25,7 @@ export default function Adam() {
     <div className="consulting">
       <p onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
         W tym domu mieszkałem na I piętrze od 1961' do 1975'.
-        <Link>
+        <Link to="/">
           <i className="fas fa-caret-down" />
         </Link>
         {dropdown && <Text />}
