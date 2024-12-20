@@ -250,7 +250,7 @@ function Footer(proops) {
         {/* <Marginer direction="vertical" margin="5em" /> */}
         <AccessibilityContainer>
           <PrivacyContainer>
-            <LinkExt to="/mail">
+            <LinkExt to="/mail" aria-label="Skontaktuj się z nami">
               {/* <FontAwesomeIcon icon={faEnvelope} /> */}
             </LinkExt>
 
@@ -413,6 +413,7 @@ function Footer(proops) {
                 to="//github.com/AdamBabinicz"
                 rel="noopener noreferrer"
                 target="_blank"
+                aria-label="Zobacz moje projekty na GitHub"
               >
                 <FontAwesomeIcon icon={faGithub} />
               </LinkExt>
@@ -423,6 +424,7 @@ function Footer(proops) {
           to="//a-g.netlify.app"
           rel="noopener noreferrer"
           target="_blank"
+          aria-label="Zobacz moje projekty"
         >
           <RightsReserved>ag 2020 - {new Date().getFullYear()}.</RightsReserved>
         </LinkExt>

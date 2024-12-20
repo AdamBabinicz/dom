@@ -72,7 +72,12 @@ function Navbar(props) {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/gang" className="nav-links" onClick={closeMobileMenu}>
+            <Link
+              to="/gang"
+              className="nav-links"
+              onClick={closeMobileMenu}
+              aria-label="Zobacz naszą ferajnę"
+            >
               Ferajna
             </Link>
           </li>
