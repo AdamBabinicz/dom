@@ -1,7 +1,7 @@
 import React, { useState, useEffect, Component } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/pages/Home";
 import Children from "./components/pages/Children";
 import Family from "./components/pages/Family";
@@ -19,31 +19,22 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/children" exact component={Children} />
-        <Route path="/family" exact component={Family} />
-        <Route path="/house" exact component={House} />
-        <Route path="/gang" exact component={Gang} />
-        <Route path="/dzidka" exact component={Dzidka} />
-        <Route path="/adam" exact component={Adam} />
-        <Route path="/ania" exact component={Ania} />
-        <Route path="/ela" exact component={Ela} />
-        <Route path="/ela" exact component={Ela} />
-        <Route path="/slider" component={Slider} />
-        <Route path="/modal" component={Modal} exact />
-      </Switch>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/children" element={<Children />} />
+        <Route path="/family" element={<Family />} />
+        <Route path="/house" element={<House />} />
+        <Route path="/gang" element={<Gang />} />
+        <Route path="/dzidka" element={<Dzidka />} />
+        <Route path="/adam" element={<Adam />} />
+        <Route path="/ania" element={<Ania />} />
+        <Route path="/ela" element={<Ela />} />
+        <Route path="/slider" element={<Slider />} />
+        <Route path="/modal" element={<Modal />} />
+      </Routes>
       <Footer />
     </Router>
   );
 }
 
 export default App;
-
-// https://www.youtube.com/watch?app=desktop&v=63UvEavSQUY
-
-// https://www.youtube.com/watch?v=stHk7Pfh4Tw
-
-// https://www.youtube.com/watch?v=tVHq2UHnNVI
-
-// https://www.facebook.com/photo/?fbid=746047727527625&set=pb.100063672122059.-2207520000
