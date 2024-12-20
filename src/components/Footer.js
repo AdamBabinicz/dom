@@ -74,7 +74,7 @@ const SocialIcon = styled.div`
   cursor: pointer;
 
   &:not(:last-of-type) {
-    margin-right: 11px;
+    margin-right: 2rem;
 
     @media screen and (max-width: 480px) {
       margin-right: 9px;
