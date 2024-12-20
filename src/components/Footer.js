@@ -91,7 +91,7 @@ const LinkExt = styled(Link)`
   color: ${theme.primary};
   transition: all 0.3s ease-in-out;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 1.5rem;
 
   &:not(:last-of-type) {
     margin-right: 11px;
