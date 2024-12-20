@@ -372,7 +372,7 @@ function Footer(proops) {
               to="/modal"
               // rel="noopener noreferrer"
               // target="_blank"
-              // aria-label="RODO"
+              aria-label="RODO"
             >
               <FontAwesomeIcon icon={faUserSecret} />
             </LinkExt>
