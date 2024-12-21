@@ -116,11 +116,11 @@ const RightsReserved = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   color: ${theme.primary};
-  font-size: 12px;
+  font-size: 1.5rem;
 
   @media screen and (max-width: 480px) {
     position: relative;
-    margin-bottom: 1rem;
+    padding-bottom: 1rem;
   }
 `;
 const ModalContainer = styled.div`
