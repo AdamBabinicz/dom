@@ -5,7 +5,7 @@ function ImgComp({ src }) {
     maxWidth: "100" + "%",
     maxHeight: "100" + "vh",
   };
-  return <img src={src} alt="..." style={imgStyles} />;
+  return <img src={src} alt="..." style={imgStyles} loading="lazy" />;
 }
 
 export default ImgComp;
