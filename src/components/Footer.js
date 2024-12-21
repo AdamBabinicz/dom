@@ -100,7 +100,7 @@ const LinkExt = styled(Link)`
     margin-right: 2rem;
 
     @media screen and (max-width: 480px) {
-      margin-right: 2rem;
+      margin-right: 0;
     }
   }
   @media screen and (max-width: 480px) {
