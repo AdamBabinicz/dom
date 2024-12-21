@@ -1,0 +1,246 @@
+import React, { useState } from "react";
+import { Button } from "./Button";
+import { Link } from "react-router-dom";
+import "./Navbar.css";
+import Dropdown from "./Dropdown";
+import { GiFamilyHouse } from "react-icons/gi";
+
+function Navbar(props) {
+  const [click, setClick] = useState(false);
+  const [dropdown, setDropdown] = useState(false);
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
+  const onMouseEnter = () => {
+    if (window.innerWidth < 960) {
+      setDropdown(false);
+    } else {
+      setDropdown(true);
+    }
+  };
+  const onMouseLeave = () => {
+    if (window.innerWidth < 960) {
+      setDropdown(false);
+    } else {
+      setDropdown(false);
+    }
+  };
+
+  return (
+    <>
+      <nav className="navbar">
+        <Link to="/" className="navbar-logo">
+          Domy i ludzie <GiFamilyHouse className="icon" />
+        </Link>
+        <div className="menu-icon" onClick={handleClick}>
+          <i className={click ? "fas fa-times" : "fas fa-bars"} />
+        </div>
+        <ul className={click ? "nav-menu active" : "nav-menu"}>
+          <li className="nav-item">
+            <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+              Home
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/slider" className="nav-links" onClick={closeMobileMenu}>
+              Album
+            </Link>
+          </li>
+          <li
+            className="nav-item"
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
+          >
+            <Link
+              to="/children"
+              className="nav-links"
+              onClick={closeMobileMenu}
+            >
+              Dzieci <i className="fas fa-caret-down" />
+            </Link>
+            {dropdown && <Dropdown />}
+          </li>
+          <li className="nav-item">
+            <Link to="/family" className="nav-links" onClick={closeMobileMenu}>
+              Rodzina
+            </Link>
+          </li>
+
+          <li className="nav-item">
+            <Link to="/house" className="nav-links" onClick={closeMobileMenu}>
+              Dom
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/gang" className="nav-links" onClick={closeMobileMenu}>
+              Ferajna
+            </Link>
+          </li>
+        </ul>
+        <Button />
+      </nav>
+    </>
+  );
+}
+
+export default Navbar;
+
+
+
+
+
+/* Podstawowe style dla Navbar */
+.navbar {
+  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  font-size: 1.2rem;
+  position: relative;
+}
+
+.navbar-logo {
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.nav-links {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.nav-links:hover {
+  background: rgb(95, 93, 93);
+  border-radius: 4px;
+  transition: all 0.2s ease-out;
+}
+
+@media screen and (max-width: 960px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    background: #242222;
+    width: 100%;
+    transition: left 0.5s ease;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .nav-links {
+    width: 100%;
+    display: block;
+  }
+
+  .fa-caret-down {
+    display: inline-block;
+  }
+}
+/* Styl dla menu dropdown w wersji desktopowej */
+.nav-item.active .dropdown-menu {
+  display: block; /* Dropdown jest widoczny w wersji desktopowej */
+  position: absolute;
+  top: 100%; /* Pojawia się poniżej */
+  left: 0;
+  background-color: var(--primary);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+/* Styl dla dropdown w wersji mobilnej */
+@media screen and (max-width: 960px) {
+  .nav-item.active .dropdown-menu {
+    display: block; /* Pokazuje dropdown po kliknięciu */
+    position: static; /* Dropdown w wersji mobilnej jest pozycjonowany normalnie */
+    width: 100%; /* Ustawienie pełnej szerokości dropdowna */
+    box-shadow: none; /* Usunięcie cienia w wersji mobilnej */
+  }
+}
+
+
+
+import React, { useState, useEffect, Component } from "react";
+import "./App.css";
+import Navbar from "./components/Navbar";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "./components/pages/Home";
+import Children from "./components/pages/Children";
+import Family from "./components/pages/Family";
+import House from "./components/pages/House";
+import Gang from "./components/pages/Gang";
+import Dzidka from "./components/pages/Dzidka";
+import Adam from "./components/pages/Adam";
+import Ania from "./components/pages/Ania";
+import Ela from "./components/pages/Ela";
+import Footer from "./components/Footer";
+import Modal from "./components/modal/Modal";
+import Slider from "./components/Slider";
+
+function App() {
+  return (
+    <Router>
+      <Navbar />
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/children" exact component={Children} />
+        <Route path="/family" exact component={Family} />
+        <Route path="/house" exact component={House} />
+        <Route path="/gang" exact component={Gang} />
+        <Route path="/dzidka" exact component={Dzidka} />
+        <Route path="/adam" exact component={Adam} />
+        <Route path="/ania" exact component={Ania} />
+        <Route path="/ela" exact component={Ela} />
+        <Route path="/ela" exact component={Ela} />
+        <Route path="/slider" component={Slider} />
+        <Route path="/modal" component={Modal} exact />
+      </Switch>
+      <Footer />
+    </Router>
+  );
+}
+
+export default App;
+
+// https://www.youtube.com/watch?app=desktop&v=63UvEavSQUY
+
+// https://www.youtube.com/watch?v=stHk7Pfh4Tw
+
+// https://www.youtube.com/watch?v=tVHq2UHnNVI
+
+// https://www.facebook.com/photo/?fbid=746047727527625&set=pb.100063672122059.-2207520000

@@ -67,6 +67,9 @@
 
 /* Wersja mobilna */
 @media screen and (max-width: 960px) {
+  .navbar-logo {
+    font-size: 1.5rem;
+  }
   .menu-icon {
     display: block;
   }
