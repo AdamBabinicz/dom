@@ -56,9 +56,12 @@ const AccessibilityContainer = styled.div`
   border-top: 0;
 
   @media screen and (max-width: 480px) {
-    width: 90%;
-    padding-left: 8px;
-    padding-right: 8px;
+    width: 100%;
+    /* padding-left: 8px;
+    padding-right: 8px; */
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
   }
 `;
 const PrivacyContainer = styled.div`
@@ -77,7 +80,7 @@ const SocialIcon = styled.div`
     margin-right: 2rem;
 
     @media screen and (max-width: 480px) {
-      margin-right: 9px;
+      margin-right: 1.7rem;
     }
   }
   @media screen and (max-width: 480px) {
@@ -94,14 +97,14 @@ const LinkExt = styled(Link)`
   font-size: 1.5rem;
 
   &:not(:last-of-type) {
-    margin-right: 11px;
+    margin-right: 2rem;
 
     @media screen and (max-width: 480px) {
-      margin-right: 9px;
+      margin-right: 2rem;
     }
   }
   @media screen and (max-width: 480px) {
-    font-size: 12px;
+    font-size: 2rem;
   }
   &:hover {
     color: ${theme.third};
@@ -114,6 +117,11 @@ const RightsReserved = styled.div`
   transform: translate(-50%, -50%);
   color: ${theme.primary};
   font-size: 12px;
+
+  @media screen and (max-width: 480px) {
+    position: relative;
+    margin-bottom: 1rem;
+  }
 `;
 const ModalContainer = styled.div`
   position: fixed;

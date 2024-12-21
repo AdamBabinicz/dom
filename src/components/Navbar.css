@@ -46,13 +46,15 @@
 }
 
 .nav-item {
-  /* margin-left: 20px;
-  position: relative; */
+  /* margin-left: 20px; */
+  /* position: relative; */
   display: flex;
   align-items: center;
   height: 80px;
 }
-
+.nav-item:nth-child(3) {
+  position: relative;
+}
 .nav-links {
   color: white;
   text-decoration: none;

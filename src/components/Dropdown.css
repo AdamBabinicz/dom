@@ -4,7 +4,7 @@
   position: absolute;
   top: 100%;
   list-style: none;
-  background-color: var(--primary);
+  background: var(--primary);
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   display: none;
   z-index: 1000;
@@ -38,8 +38,8 @@
   .dropdown-menu {
     width: 90%; /* Szerokość menu w wersji mobilnej */
     max-width: 300px; /* Maksymalna szerokość menu */
-    position: absolute; /* Pozycjonowanie w stosunku do rodzica */
-    top: 50%;
+    position: absolute;
+    top: 100%;
     left: 50%; /* Ustawienie na środku */
     transform: translateX(-50%); /* Wyśrodkowanie menu */
     display: none; /* Menu ukryte domyślnie */
