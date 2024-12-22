@@ -29,7 +29,6 @@
 .slide img {
   display: flex;
   margin: 0 auto;
-  z-index: -1;
 }
 .btn {
   position: absolute;
@@ -49,7 +48,7 @@
   color: rgba(255, 255, 255, 0.692);
 }
 .btn:hover i {
-  /* color: #fff; */
+  color: #fff;
 }
 #goLeft {
   left: 0;
